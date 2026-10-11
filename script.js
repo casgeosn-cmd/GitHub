@@ -98,11 +98,11 @@ if (num === randomNum) {
 }
  // for typing response 
  let guess = 1;
- document.getElementById("submitguess").onclick.function() ;{
+ document.getElementById("submitguess").onclick = function() {
   let x = document.getElementById("guessField").value;
   if (x == randomNum) {
   const h2=document.createElement('h2');
-    h2.textContent = `Congrats! You have guessed the number! It was ${num}`;
+    h2.textContent = `Congrats! You have guessed the number! It was ${num}.You got it in ${guess} guess(es)!`;
 }
 else if (x > randomNum) {
   guess++;
