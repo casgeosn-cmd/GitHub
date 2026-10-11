@@ -8,9 +8,25 @@
         <script src="script.js" defer></script>
     </head>
     <body>
+<!--- creds for text box https://www.geeksforgeeks.org/javascript/number-guessing-game-using-javascript/ -->
         <img src="CREA330/SpeakNumberGame/img/mic2.png" alt="Microphone to speak into">
         <h1>Guess a Number Between 1-100</h1>
         <h3>Speak the number into your microphone</h3>
         <div id="msg" class="msg"></div>
+        <div class="form">
+        <label for="guessField">
+            Or type your guess instead:
+        </label>
+        
+
+        <input type="text" 
+               id="guessField" 
+               class="guessField">
+
+        <input type="submit" 
+               value="Submit guess" 
+               class="guessSubmit" 
+               id="submitguess">
+    </div>
     </body>
 </html>
