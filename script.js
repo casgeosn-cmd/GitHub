@@ -75,7 +75,7 @@ if (num<1 || num>100) {
 //check number and provide feedback
 if (num === randomNum) {
     const h2=document.createElement('h2');
-    h2.textContent = `Congrats! You have guessed the number! It was ${num}`;
+    h2.textContent = `Congrats! You have guessed the number! It was ${num}. You got it in ${guess} guess(es)!`;
 
     const button = document.createElement('button');
     button.classList.add('play-again');
@@ -96,3 +96,24 @@ if (num === randomNum) {
     msgEl.append(div);
  }
 }
+ // for typing response 
+ let guess = 1;
+ document.getElementById("submitguess").onclick.function() ;{
+  let x = document.getElementById("guessField").value;
+  if (x == randomNum) {
+  const h2=document.createElement('h2');
+    h2.textContent = `Congrats! You have guessed the number! It was ${num}`;
+}
+else if (x > randomNum) {
+  guess++;
+  const div = document.createElement('div');
+  div.textContent = "GO LOWER";
+  msgEl.append(div);
+}
+else {
+  guess++;
+  const div = document.createElement('div');
+  div.textContent = 'GO HIGHER';
+  msg.El.append(div);
+}
+ }
